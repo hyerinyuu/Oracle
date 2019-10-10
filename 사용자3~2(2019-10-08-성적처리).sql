@@ -187,7 +187,7 @@ ORDER BY s_num ;
 
 CREATE TABLE tbl_dept (
     d_num	VARCHAR2(3)		PRIMARY KEY, 
-    d_name	VARCHAR2(20)	NOR NULL,
+    d_name	VARCHAR2(20)	NOT NULL,
     d_pro	VARCHAR(3)		
 );
 
