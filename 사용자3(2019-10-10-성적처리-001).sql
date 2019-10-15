@@ -68,8 +68,6 @@ FROM tbl_score SC
     LEFT JOIN tbl_student ST
         ON SC.s_num = ST.st_num ;
 
-
--- SCORE2에 데이터 추가하기
 DESC tbl_score2 ;
 
 CREATE TABLE tbl_score2 (
@@ -88,6 +86,7 @@ DESC tbl_dept ;
 
 SELECT * FROM tbl_score2 ;
 
+-- SCORE2에 데이터 추가하기
 SELECT SC.s_num, ST.st_name, SC.s_dept, SC.s_kor, SC.s_eng, SC.s_math,
        SC.s_kor + SC.s_eng + SC.s_math AS 총점,
        ROUND((SC.s_kor + SC.s_eng + SC.s_math)/3,0) AS 평균
@@ -97,8 +96,7 @@ FROM tbl_score2 SC
            
 SELECT * FROM tbl_dept;
        
-
-
+       
 -- 학과 데이터 추가
 INSERT INTO tbl_dept(d_num, d_name, d_pro )
 VALUES('001', '컴퓨터공학', '홍길동');
@@ -199,6 +197,10 @@ SELECT * FROM view_score ;
 
 SELECT * FROM view_score
 ORDER BY s_num ;
+
+SELECT * FROM view_score
+WHERE d_name = '컴퓨터공학';
+
 
 DESC view_score;
 
