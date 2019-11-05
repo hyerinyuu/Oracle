@@ -1,0 +1,26 @@
+
+TABLESPACE COMQUIZ_DB이(가) 생성되었습니다.
+
+
+User QUIZ이(가) 생성되었습니다.
+
+
+명령의 8 행에서 시작하는 중 오류 발생 -
+GRANT DBA TO COMQUIZ
+오류 보고 -
+ORA-01917: user or role 'COMQUIZ' does not exist
+01917. 00000 -  "user or role '%s' does not exist"
+*Cause:    There is not a user or role by that name.
+*Action:   Re-specify the name.
+
+Grant을(를) 성공했습니다.
+
+
+명령의 5 행에서 시작하는 중 오류 발생 -
+CREATE USER quiz IDENTIFIED BY quiz
+DEFAULT TABLESPACE COMQUIZ_DB
+오류 보고 -
+ORA-01920: user name 'QUIZ' conflicts with another user or role name
+01920. 00000 -  "user name '%s' conflicts with another user or role name"
+*Cause:    There is already a user or role with that name.
+*Action:   Specify a different user name.
