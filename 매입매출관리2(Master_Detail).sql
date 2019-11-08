@@ -80,6 +80,16 @@ WHERE m_seq = d_m_seq;
 
 COMMIT;
 
+/*
+
+[TBL_MASTER]
+
+M_SEQ : PARENT ID
+M_SUBJECT
+
+TBL_
+
+
 
 
 

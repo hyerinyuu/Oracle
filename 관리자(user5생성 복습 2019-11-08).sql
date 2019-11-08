@@ -1,0 +1,9 @@
+CREATE TABLESPACE user5_db
+DATAFILE '/bizwork/oracle/data.user5_dbf'
+SIZE 10M AUTOEXTEND ON NEXT  10K;
+
+CREATE USER user5 IDENTIFIED BY user5
+DEFAULT TABLESPACE user5_db;
+
+GRANT DBA TO user5;
+
